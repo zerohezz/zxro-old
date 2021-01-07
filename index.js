@@ -8,7 +8,7 @@ client.on('ready', () => {
     console.log('The client is ready!')
 
     command(client, 'ping', (message) => {
-        message.channel.send('Pong!')
+        message.channel.send('whts up')
     })
 })
 
