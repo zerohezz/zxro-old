@@ -8,8 +8,8 @@ module.exports = class ReadyEvent extends BaseEvent {
     console.log(client.user.tag + ' has logged in.');
     client.user.setPresence({
       activity: {
-        name: 'Dakiti By Bad Bunny! | x.commands',
-        type: "LISTENING"
+        name: 'Hentai',
+        type: "Watching"
       },
       status: 'online'
     })
