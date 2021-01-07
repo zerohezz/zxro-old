@@ -6,7 +6,8 @@ const command = require('./command')
 
 client.on('ready', () => {
     console.log('The client is ready!')
-
+    bot.user.setActivity('Watching Hentai');
+    
     command(client, 'ping', (message) => {
         message.channel.send('Pong!')
     })
