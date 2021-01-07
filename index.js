@@ -11,10 +11,10 @@ client.on('ready', () => {
         message.channel.send('whts up')
     })
     
-    command(client,'embed', (message) => { 
+    command(client, 'embed', (message) => { 
         const embed = new Discord.MessageEmbed().setTitle('Example text embed')
 
-        messsage.channel.send(embed)
+        message.channel.send(embed)
     })
 
 })
