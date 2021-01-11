@@ -16,7 +16,6 @@ client.on('ready', () => {
 
         message.channel.send(embed)
     })
-
 })
 
 client.login(process.env.DJS_TOKEN)
