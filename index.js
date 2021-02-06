@@ -6,7 +6,7 @@ const command = require('./command')
 const privateMessage = require('./private-message')
 client.on('ready', () => {
     console.log('The client is ready!')
-    bot.user.setActivity('Listeing to Juice WRLD')
+    bot.user.setActivity('Listeing to Juice WRLD');
 
     command(client, ['ping','hi'], (message) => {
         message.channel.send('whts up')
