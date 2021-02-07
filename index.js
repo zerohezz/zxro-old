@@ -6,10 +6,6 @@ const command = require('./command')
 const privateMessage = require('./private-message')
 client.on('ready', () => {
     console.log('The client is ready!')
-    
-    command(client, ['invite'], (message) => {
-        message.channel.send('https://discord.com/oauth2/authorize?client_id=796245884836511774&scope=bot&permissions=2147483647')
-    }
 
     command(client, ['ping','hi'], (message) => {
         message.channel.send('whts up')
