@@ -42,6 +42,7 @@ client.on('ready', () => {
        const embed = new Discord.MessageEmbed()
        s.setTitle('Help Menu')
        s.setColor('#96ff82')
+       message.channel.send(embed)
    })
 
 
