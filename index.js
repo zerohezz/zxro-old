@@ -7,6 +7,8 @@ const privateMessage = require('./private-message')
 client.on('ready', () => {
     console.log('The client is ready!')
 
+
+
     command(client, ['ping','hi'], (message) => {
         message.channel.send('whts up')
     })
@@ -17,14 +19,15 @@ client.on('ready', () => {
        const embed = new Discord.MessageEmbed()
        .setURL("https://discord.com/oauth2/authorize?client_id=796245884836511774&scope=bot&permissions=2147483647")
         .setTitle('Invite Link')
+        .setColor('#96ff82')
         message.channel.send(embed)
    })
+// embed template
+    // command(client, 'embed', (message) => { 
+       // const embed = new Discord.MessageEmbed().setTitle('Example text embed')
 
-    command(client, 'embed', (message) => { 
-        const embed = new Discord.MessageEmbed().setTitle('Example text embed')
-
-        message.channel.send(embed)
-    })
+        //message.channel.send(embed)
+  //  })
     privateMessage(client, 'ping', 'Pong!')
     
 })
