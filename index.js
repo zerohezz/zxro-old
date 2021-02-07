@@ -10,7 +10,15 @@ client.on('ready', () => {
     command(client, ['ping','hi'], (message) => {
         message.channel.send('whts up')
     })
-    
+  
+    // Working on Bot invite
+
+    command(client,'invite',(message) => {
+       const embed = new Discord.MessageEmbed().setURL("https://discord.com/oauth2/authorize?client_id=796245884836511774&scope=bot&permissions=2147483647")
+       
+
+   })
+
     command(client, 'embed', (message) => { 
         const embed = new Discord.MessageEmbed().setTitle('Example text embed')
 
