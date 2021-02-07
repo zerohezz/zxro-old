@@ -8,7 +8,7 @@ client.on('ready', () => {
     console.log('The client is ready!')
 
     function pickStatus() {
-        let status = ['Juice WRLD', 'z.help'];
+        let status = ['z.help'];
         let Status = Math.floor(Math.random() * status.length);
         
         client.user.setActivity(status[Status], {
@@ -40,8 +40,8 @@ client.on('ready', () => {
 
    command(client,'help',(message) => {
        const embed = new Discord.MessageEmbed()
-       s.setTitle('Help Menu')
-       s.setColor('#96ff82')
+       .setTitle('Help Menu')
+       .setColor('#96ff82')
        message.channel.send(embed)
    })
 
