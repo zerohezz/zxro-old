@@ -11,12 +11,12 @@ client.on('ready', () => {
         message.channel.send('whts up')
     })
   
-    // Working on Bot invite
+    // Bot invite
 
     command(client,'invite',(message) => {
        const embed = new Discord.MessageEmbed().setURL("https://discord.com/oauth2/authorize?client_id=796245884836511774&scope=bot&permissions=2147483647")
-       
 
+        message.channel.send(embed)
    })
 
     command(client, 'embed', (message) => { 
