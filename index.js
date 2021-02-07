@@ -7,6 +7,15 @@ const privateMessage = require('./private-message')
 client.on('ready', () => {
     console.log('The client is ready!')
 
+    function pickStatus() {
+        let status = ['Juice WRLD', 'z.help'];
+        let Status = Math.floor(Math.random() * status.length);
+        
+        client.user.setActivity(status[Status], {
+        type: "LISTENING"
+        })
+        };
+        setInterval(pickStatus, 10000);
 
 
     command(client, ['ping','hi'], (message) => {
@@ -28,6 +37,14 @@ client.on('ready', () => {
 
         //message.channel.send(embed)
   //  })
+
+   command(client,'help',(message) => {
+       const embed = new Discord.MessageEmbed()
+       s.setTitle('Help Menu')
+       s.setColor('#96ff82')
+   })
+
+
     privateMessage(client, 'ping', 'Pong!')
     
 })
